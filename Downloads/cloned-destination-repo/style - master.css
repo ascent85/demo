@@ -1,0 +1,686 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #F7D73E;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+#menu {
+  padding: 10px 20px;
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu-items li:last-child {
+  margin-right: 0;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-items li a:hover {
+  background-color: #178800;
+  color: #ff0000;
+}
+
+/* Menu Container */
+.menu-container {
+  padding: 100px 0;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%; /* Limit the container width */
+  color: #f7f7f7;
+}
+
+.menu-container h1 {
+  font-size: 36px; /* Increase the font size for the menu title */
+  margin-bottom: 20px;
+  color: white; /* Set the text color to white */
+  background-color: rgba(0, 0, 0, 0.8); /* Add background box to the H1 element */
+  padding: 10px; /* Add some padding to the background box */
+  border-radius: 10px; /* Add border radius to the background box */
+  display: inline-block; /* Display as an inline block to fit the content width */
+}
+
+.menu-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Add some space between the table and container */
+}
+
+.menu-container th,
+.menu-container td {
+  padding: 12px; /* Increase the padding for better spacing */
+  border: 1px solid #ccc;
+}
+
+.menu-container th {
+  font-size: 20px; /* Slightly increase the font size */
+  font-weight: bold;
+  background-color: #f7f7f7;
+  color: #333; /* Darken the text color for better contrast */
+}
+
+.menu-container td {
+  font-size: 18px; /* Slightly increase the font size */
+  color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Add hover effect on table rows */
+.menu-container tr:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+/* Image Section */
+.food-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.food-image img {
+  max-width: 100%; /* Adjust the image size to fit the container width */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a 3D effect */
+}
+
+/* Interactive Section */
+.interactive-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.interactive-section h2 {
+  font-size: 30px; /* Increase the font size for the section title */
+  color: white; /* Set the text color to white */
+  background-color: rgba(0, 0, 0, 0.8); /* Add background box to the H2 element */
+  padding: 10px; /* Add some padding to the background box */
+  border-radius: 10px; /* Add border radius to the background box */
+  display: inline-block; /* Display as an inline block to fit the content width */
+  margin-top: 20px; /* Add some space between the section title and the links */
+}
+
+.interactive-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.interactive-section li {
+  margin: 10px 0;
+}
+
+.interactive-section a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f7d73e; /* Use the brand color for the links */
+  color: #333; /* Set the text color to a dark color for better contrast */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.interactive-section a:hover {
+  background-color: #178800; /* Darken the background color on hover for visual feedback */
+  color: #fff; /* Change the text color to white on hover */
+  cursor: pointer;
+}
+
+
+/* Drinks */
+#drinks {
+  padding: 100px 0;
+  text-align: center;
+  margin: 0 20px;
+}
+
+/* Drink Menu */
+
+#drinks h1 {
+  color: white;
+}
+
+.drink-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.drink-list li {
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.drink-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.drink-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.drink-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #C62828;
+}
+
+/* Image Section */
+.barmurals-image {
+  text-align: center;
+  margin: 40px 0; /* Add some space between the countdown and the image */
+}
+
+.barmurals-img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Countdown Clock */
+#countdown {
+  text-align: center;
+  color: #ffffff;
+}
+
+.countdown-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7D73E;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.countdown-digit {
+  margin: 0 10px;
+  font-size: 48px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #C62828;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-digit--days,
+.countdown-digit--hours,
+.countdown-digit--minutes,
+.countdown-digit--seconds {
+  font-size: 72px;
+}
+
+/* Home */
+#home {
+  text-align: center;
+  padding: 100px 0;
+}
+
+#home h1 {
+  font-size: 72px; /* Increase font size for a bold appearance */
+  color: #FFD700; /* Use a gold color for a festive touch */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow for depth */
+  margin-bottom: 20px; /* Add some space below the text */
+}
+
+#home h1 span {
+  background-color: #E34234; /* Use a vibrant red background for the text */
+  padding: 10px 20px; /* Add padding to create a rectangular background */
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+#home p {
+  font-size: 24px; /* Adjust font size for supporting text */
+  color: #ffffff; /* Use white color for contrast */
+  max-width: 100%; /* Limit the width to make the text more readable */
+  margin: 0 auto 40px; /* Center the text and add some space below it */
+}
+
+.home-text h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.home-img img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.large-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  width: calc(50% - 20px); /* Add spaces before and after the subtraction symbol */
+}
+
+.small-image {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px 0;
+}
+
+/* About */
+#about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Add the background box style for the "About Us" text */
+#about h1 {
+  color: white; /* Set the H1 text color to white */
+  background-color: rgba(0, 0, 0, 0.8); /* Add background box to the H1 element */
+  padding: 10px; /* Add some padding to the background box */
+  border-radius: 10px; /* Add border radius to the background box */
+  display: inline-block; /* Display as an inline block to fit the content width */
+  margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+
+.about h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+/* Timeline */
+
+/* Timeline Title */
+#timeline-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#timeline-title h2 {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#timeline {
+  list-style: none;
+  padding: 20px; /* Adjust padding as needed */
+  display: flex; /* Add Flexbox */
+  flex-direction: column; /* Stack timeline vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+#timeline li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the background color */
+  padding-right: 20px;
+  cursor: pointer;
+  position: relative; /* For tooltip positioning */
+}
+
+.timeline-date::after {
+  content: "▼"; /* Downward arrow icon */
+  margin-left: 5px;
+}
+
+/* Change cursor style when hovering over timeline dates */
+.timeline-date:hover {
+  cursor: pointer;
+}
+
+/* Tooltip for showing additional information */
+.timeline-date:hover::before {
+  content: "Click to expand"; /* Tooltip text */
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0; /* Hide the tooltip by default */
+  transition: opacity 0.3s ease;
+}
+
+.timeline-date:hover::after,
+.timeline-date:hover::before {
+  opacity: 1; /* Show tooltip on hover */
+}
+
+.timeline-content {
+  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the background color */
+}
+
+.timeline-content.show {
+  display: block;
+  animation: fade-in 0.5s ease;
+}
+
+
+/* Testimonials */
+#testimonials {
+  background-color: #f8f8f8;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #666;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+.customer-photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #666;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.star-rating {
+  margin: 10px 0;
+}
+
+.fa-star {
+  color: #ffce00;
+}
+
+.testimonial-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Contact */
+#contact {
+  padding: 100px 0;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.contact-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.form-container {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.form-container p,
+.form-container a {
+  background-color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+}
+
+/* Reservation */
+#reservations {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.reservation-container {
+  margin-top: 30px;
+}
+
+.reservation-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#reservation-form label {
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+#reservation-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+#reservation-form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Image Section */
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dining-room-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #292929;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  clear: both;
+  width: 100%;
+}
+
+/* Responsive adjustments for iPhone */
+@media (max-width: 768px) {
+  /* Center the home page on mobile */
+  #home {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Adjust the font size for the home title on smaller screens */
+  #home h1 {
+    font-size: 34px;
+  }
+
+  /* Fix the issue of the home page being too wide */
+  .container {
+    max-width: 100%;
+  }
+
+  /* Adjust the size of smaller images to fit properly */
+  .small-image {
+    height: auto;
+  }
+
+  /* Adjust the countdown timer size on smaller screens */
+  .countdown-digit {
+    font-size: 24px;
+    padding: 5px;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+  .video-container {
+    max-width: 100%; /* Set the container width to 100% on mobile */
+    height: auto; /* Allow the height to adjust proportionally to the width */
+  }
+
+  .video-container iframe {
+    width: 100%; /* Set the iframe width to 100% of the container */
+    height: 200px; /* Set a fixed height for the video on mobile devices */
+  }
+}

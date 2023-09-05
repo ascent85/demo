@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Drink Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Your existing CSS styles here */
+
+        /* CSS for the fade-in effect using transition */
+        .barmurals-image img {
+            opacity: 0; /* Set the initial opacity to 0 to start the fade-in effect */
+            animation: fadeInOutAnimation 5s ease infinite; /* Add the animation */
+        }
+
+        @keyframes fadeInOutAnimation {
+            0%, 100% {
+                opacity: 0; /* At 0% and 100% keyframes, set opacity to 0 (invisible) */
+            }
+            50% {
+                opacity: 1; /* At 50% keyframe, set opacity to 1 (fully visible) */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="drinks">
+            <nav class="navbar">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>Mexican Drink Menu</h1>
+
+            <ul class="drink-list">
+                <li>
+                    <h2 class="drink-name">Margarita</h2>
+                    <p class="drink-description">A classic Mexican cocktail made with tequila, lime juice, and triple
+                        sec.
+                        Served on the rocks with a salted rim, this refreshing drink is perfect for any occasion.</p>
+                    <p class="drink-price">$10.99</p>
+                </li>
+                <li>
+                    <h2 class="drink-name">Paloma</h2>
+                    <p class="drink-description">A popular Mexican cocktail featuring tequila and grapefruit soda. With
+                        a
+                        hint of lime, this tangy and bubbly drink is a delightful choice for those seeking a refreshing
+                        twist.</p>
+                    <p class="drink-price">$9.99</p>
+                </li>
+                <li>
+                    <h2 class="drink-name">Horchata</h2>
+                    <p class="drink-description">A traditional Mexican rice-based drink flavored with cinnamon and
+                        vanilla.
+                        This
+                        creamy and slightly sweet beverage is the perfect complement to any spicy dish.</p>
+                    <p class="drink-price">$4.99</p>
+                </li>
+                <li>
+                    <h2 class="drink-name">Agua de Jamaica</h2>
+                    <p class="drink-description">Also known as hibiscus tea, this vibrant and refreshing drink is made from dried
+                        hibiscus flowers. Its tart and tangy flavor profile makes it a popular choice on a hot day.</p>
+                    <p class="drink-price">$3.99</p>
+                </li>
+                <li>
+                    <h2 class="drink-name">Mexican Hot Chocolate</h2>
+                    <p class="drink-description">Indulge in a rich and velvety hot chocolate with a touch of cinnamon. Served
+                        steaming hot, this cozy beverage is perfect for warming up during the colder months.</p>
+                    <p class="drink-price">$5.99</p>
+                </li>
+            </ul>
+
+            <div id="countdown">
+                <h1 class="countdown-title">Cinco de Mayo Countdown</h1>
+                <div class="countdown-timer">
+                    <div class="countdown-digit countdown-digit--days">
+                        <span id="days">00</span> days
+                    </div>
+                    <div class="countdown-digit countdown-digit--hours">
+                        <span id="hours">00</span> hours
+                    </div>
+                    <div class="countdown-digit countdown-digit--minutes">
+                        <span id="minutes">00</span> minutes
+                    </div>
+                    <div class="countdown-digit countdown-digit--seconds">
+                        <span id="seconds">00</span> seconds
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add the image here -->
+            <div class="barmurals-image">
+                <img src="barmurals.jpg" alt="Bar Murals" class="barmurals-img">
+            </div>
+        </div>
+    </div>
+
+        <!-- Include the countdown.js script here -->
+        <script src="countdown.js" defer></script>
+        
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mexican Food Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Your existing CSS styles here */
+
+    /* CSS for the fade-in effect using transition */
+    .food-image img {
+      opacity: 0; /* Set the initial opacity to 0 to start the fade-in effect */
+      animation: fadeInOutAnimation 5s ease infinite; /* Add the animation */
+    }
+
+    @keyframes fadeInOutAnimation {
+      0%, 100% {
+        opacity: 0; /* At 0% and 100% keyframes, set opacity to 0 (invisible) */
+      }
+      50% {
+        opacity: 1; /* At 50% keyframe, set opacity to 1 (fully visible) */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="menu">
+      <nav class="navbar">
+        <ul class="menu-items">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="drinks.html">Drinks</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-container">
+      <h1>Mexican Food Menu</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tacos</td>
+            <td>Soft or crispy tortillas filled with various fillings such as beef, chicken, or vegetables, topped with
+              salsa, cheese, and guacamole.</td>
+          </tr>
+          <tr>
+            <td>Enchiladas</td>
+            <td>Tortillas rolled and filled with meat, cheese, or beans, covered in chili sauce and baked until
+              deliciously melted.</td>
+          </tr>
+          <tr>
+            <td>Tamales</td>
+            <td>Masa dough filled with meat, cheese, or vegetables, wrapped in a corn husk and steamed to perfection.</td>
+          </tr>
+          <tr>
+            <td>Guacamole</td>
+            <td>A delicious avocado-based dip made with mashed avocados, lime juice, onions, tomatoes, and spices.</td>
+          </tr>
+          <tr>
+            <td>Chiles Rellenos</td>
+            <td>Poblano peppers stuffed with cheese, meat, or beans, battered and fried until golden and served with
+              tomato sauce.</td>
+          </tr>
+          <tr>
+            <td>Ceviche</td>
+            <td>A refreshing seafood dish made with raw fish or shrimp marinated in citrus juice, mixed with onions,
+              tomatoes, and cilantro.</td>
+          </tr>
+          <tr>
+            <td>Churros</td>
+            <td>Delicious fried dough pastries dusted with cinnamon sugar, often served with chocolate dipping sauce.</td>
+          </tr>
+          <tr>
+            <td>Flan</td>
+            <td>A creamy caramel custard dessert with a smooth texture and rich flavor.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="food-image">
+      <img src="food.png" alt="Assortment of Mexican dishes">
+    </div>
+
+    <div class="interactive-section">
+      <h2>Learn about Mexican cuisine here!</h2>
+      <ul class="interactive-links">
+        <li><a href="https://backyardtaco.com/blog/chicken-mexican-food-history/#:~:text=The%20history%20of%20Mexican%20food%20can%20be%20traced%20back%20over,are%20still%20seen%20throughout%20Mexico.">Mexican Cuisine History</a></li>
+        <li><a href="https://www.tasteofhome.com/collection/mexican-foods-take/">Traditional Mexican Dishes</a></li>
+        <li><a href="https://www.theplazarestaurant.com/the-ingredients-youll-find-in-traditional-mexican-food/">Mexican Ingredients</a></li>
+      </ul>
+    </div>
+
+    <script>
+      // JavaScript to add "visible" class when the image comes into view
+      document.addEventListener("DOMContentLoaded", function () {
+        const foodImage = document.querySelector(".food-image img");
+
+        // Handle image visibility (when the image comes into view)
+        function handleImageVisibility() {
+          const rect = foodImage.getBoundingClientRect();
+          if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            foodImage.classList.add("visible");
+          }
+        }
+
+        // Initial load
+        handleImageVisibility();
+
+        // Handle page scrolling
+        window.addEventListener("scroll", handleImageVisibility);
+      });
+    </script>
+  </div> <!-- End of .container -->
+</body>
+
+</html>

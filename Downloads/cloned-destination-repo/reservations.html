@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a Reservation - Fiesta Fusion</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    /* Your existing CSS styles here */
+
+    /* CSS for the fade-in effect using transition */
+    .image-container img {
+      opacity: 0; /* Set the initial opacity to 0 to start the fade-in effect */
+      animation: fadeInOutAnimation 5s ease infinite; /* Add the animation */
+    }
+
+    @keyframes fadeInOutAnimation {
+      0%, 100% {
+        opacity: 0; /* At 0% and 100% keyframes, set opacity to 0 (invisible) */
+      }
+      50% {
+        opacity: 1; /* At 50% keyframe, set opacity to 1 (fully visible) */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="reservations">
+    <nav class="navbar">
+      <ul class="menu-items">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container"> <!-- Start of container -->
+
+      <section class="reservation-container">
+        <h1>Make a Reservation</h1>
+        <form id="reservation-form">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" min="1" required>
+
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+        
+        <!-- Add the image here -->
+        <div class="image-container">
+          <img src="diningroom.jpg" alt="Dining Room at Fiesta Fusion" class="dining-room-image">
+        </div>
+      </section>
+
+    </div> <!-- End of container -->
+
+  </div>
+
+</body>
+
+</html>
